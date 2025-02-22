@@ -1,1 +1,265 @@
-<div>HELLO WORLD YOU ARE IN AUTHORS!</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portfolio</title>
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" type="text/css" href="/main.css" />
+    </head>
+  </head>
+
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1-1">
+              <img
+                src="images/profile.png"
+                alt="Profile images"
+                width="156px"
+                height="142px"
+              />
+            </div>
+            <div class="left_1-2"><%=user.name%></div>
+            <div class="left_1-3"><%=user.profession%></div>
+            <div class="left-icons">
+              <a class="link_href">
+                <div class="icon">
+                  <img src="icon/Dribbble.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href">
+                <div class="icon">
+                  <img src="icon/Facebook.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href">
+                <div class="icon">
+                  <img src="icon/Instagram.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href">
+                <div class="icon">
+                  <img src="icon/Linkeding.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href">
+                <div class="icon">
+                  <img src="icon/Twitter.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href">
+                <div class="icon">
+                  <img src="icon/Youtube.svg" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="marginer"></div>
+          <div class="about_div">
+            <div class="age">
+              <div class="span_age">Age</div>
+              <span class="age_24"><%=user.age%></span>
+            </div>
+            <div class="Residence">
+              <div class="span_Res"><%=user.residence%></div>
+              <span class="span_BD">BD</span>
+            </div>
+            <div class="Freelance">
+              <span class="span_Fre">Freelance:</span>
+              <span class="span_Ava">Available</span>
+            </div>
+            <div class="Address">
+              <span class="span_Add">Address:</span>
+              <span class="span_Dha"><%=user.address%></span>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="Languages">
+            <div class="lang"><%=user.language%></div>
+            <div class="Bangla">
+              <span class="span_lang"><%=user.language1, 0%></span>
+              <span class="span_number">100%</span>
+            </div>
+            <div class="Line">
+              <div class="progress">
+                <div class="progress_bar" style="width: 100%"></div>
+              </div>
+              <div class="Bangla">
+                <span class="span_lang"><%=user.language2%></span>
+                <span class="span_number">80%</span>
+              </div>
+              <div class="Line">
+                <div class="progress">
+                  <div class="progress_bar" style="width: 80%"></div>
+                </div>
+                <div class="Bangla">
+                  <span class="span_lang"><%=user.language3%></span>
+                  <span class="span_number">60%</span>
+                </div>
+                <div class="Line">
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="Engilish"></div>
+                <div class="Line"></div>
+                <div class="Spanish"></div>
+                <div class="Line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_4">
+            <div class="skills">Skills</div>
+            <div class="Bangla">
+              <span class="span_lang"><%=user.skills%></span>
+              <span class="span_number">90%</span>
+            </div>
+            <div class="Line">
+              <div class="progress">
+                <div class="progress_bar" style="width: 90%"></div>
+              </div>
+              <div class="Bangla">
+                <span class="span_lang"><%=user.skills2%></span>
+                <span class="span_number">85%</span>
+              </div>
+              <div class="Line">
+                <div class="progress">
+                  <div class="progress_bar" style="width: 85%"></div>
+                </div>
+              <div class="Bangla">
+                <span class="span_lang"><%=user.skills3%></span>
+                <span class="span_number">80%</span>
+              </div>
+              <div class="Line">
+                <div class="progress">
+                  <div class="progress_bar" style="width: 80%"></div>
+                </div>
+                <div class="Bangla">
+                  <span class="span_lang"><%=user.skills4%></span>
+                  <span class="span_number">75%</span>
+                </div>
+                <div class="Line">
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 75%"></div>
+                  </div>
+
+                  <div class="Bangla">
+                    <span class="span_lang"><%=user.skills5%></span>
+                    <span class="span_number">70%</span>
+                  </div>
+                  <div class="Line">
+                    <div class="progress">
+                      <div class="progress_bar" style="width: 70%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="marginer"></div>
+          <div class="left_5">
+            <div class="Extra">
+              <div class="Extra_1"><%=user.extra_skills0%></div>
+              <div class="Extra_icon"> <img src="btn_icon/Icons.png" alt="">
+              <span class="Extra_span"><%=user.extra_skills%></span></div>
+              <div class="Extra_icon"> <img src="btn_icon/Icons.png" alt="">
+                <span class="Extra_span"><%=user.extra_skills4%></span></div>
+                <div class="Extra_icon"> <img src="btn_icon/Icons.png" alt="">
+                  <span class="Extra_span"><%=user.extra_skills2%></span></div>
+                  <div class="Extra_icon"> <img src="btn_icon/Icons.png" alt="">
+                    <span class="Extra_span"><%=user.extra_skills3%></span></div>
+              
+             
+            </div>
+            <div class="Bootstrab"></div>
+          </div>
+          <div class="marginer"></div>
+        
+      </div>
+      <div class="midd_frame">
+        <div class="midd_conteaner">
+          <div class="bax_container">
+          <div>
+            <span class="span_text">Doctor neurologists 
+              in OHSU Hospital </span>
+          </div>
+          <div class="lorem_ipsum">Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Et, volutpat feugiat 
+            placerat lobortis. Natoque rutrum semper sed 
+            suspendisse nunc lectus.</div>
+           <img  class="button" src="box_images/Button_Book Me.jpeg" alt="">
+          </div>
+          <div class="box_img" >
+            <img src="box_images/Your Image 1.png" alt="">
+          </div>
+        </div>
+        
+        <div class="my_servis">my services</div>
+        <div class="lorem_tex">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia 
+          consequat duis enim velit mollit. lorem ipsum</div>
+          <div class="servise_container"> 
+            <div class="Web_dev">
+              <img class="game_dev" src="btn_icon/Icons_game-development.svg" alt="">
+          <span class="span_tex1">web development</span>
+          <span class="span_tex2">blog, e-commerce</span>
+          </div>
+          <div class="Web_dev">
+            <img src="btn_icon/Icons_illustration.png" alt="">
+        <span class="span_tex1">uI/uX design</span>
+        <span class="span_tex2">Mobile app, website design</span>
+        </div>
+        <div class="Web_dev">
+          <img src="btn_icon/Icons_Microphone.png" alt="">
+      <span class="span_tex1">sound design</span>
+      <span class="span_tex2">Voice Over, Beat Making</span>
+      </div>
+      <div class="Web_dev">
+        <img src="btn_icon/Icons_game-development.svg" alt="">
+    <span class="span_tex1" >game design</span>
+    <span class="span_tex2">Character Design, Props & Objects</span>
+    </div>
+    <div class="Web_dev">
+      <img src="btn_icon/Icons_Photographer-1.png" alt="">
+  <span class="span_tex1">photography</span>
+  <span class="span_tex2">photography</span>
+  </div>
+  <div class="Web_dev">
+    <img src="box_images/Icons_game-development.svg" alt="">
+<span class="span_bot">advertising</span>
+<span class="span_bot1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Vitae nulla diam in ac dictum a urna viverra morbi. </span>
+  <span class="span_button">ORDER NOW ➤</span>
+</div>
+
+        </div>
+      </div>
+        <div class="right_frame">
+         <div class="contrast">
+          <img class="right_menyu_top_img" src="images/Vector.png" alt="">
+         </div>
+         <div class="ribht_menyu">
+          <img class="menyu_home" src="images/Pop up.png" alt="">
+          <img class="right_menyu_box" src="images/Home.png" alt="">
+          <img class="right_menyu_box" src="images/Service.png" alt="">
+          <img class="right_menyu_box" src="images/Cv.png" alt="">
+          <img class="right_menyu_box" src="images/Portfolio.png" alt="">
+          <img class="right_menyu_box" src="images/Blog.png" alt="">
+          <img class="right_menyu_box" src="images/Contact.png" alt="">
+         </div>
+        </div>
+    </div>
+  </body>
+</html>
