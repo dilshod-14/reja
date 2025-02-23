@@ -103,3 +103,4 @@ return count;
 
 console.log(ismlar("e", "elmurod"));
 console.log(ismlar("o", "Shog,zod"));
+//asdff
