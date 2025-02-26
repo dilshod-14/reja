@@ -45,8 +45,8 @@
 //       }, 1000);
 //     });
 // }
-// }   
-  // CALL VAI THEN/CATCH
+// }
+// CALL VAI THEN/CATCH
 // console.log("passed here 0");
 // maslahatBering(25)
 //   .then((data) => {maslahatBering(31)
@@ -91,16 +91,59 @@
 // }
 // run();
 
-function ismlar(e, dostlar) {
-    let count = 0;
-    for(let salom of dostlar) {
-        if(salom === e) {
-            count++;
-        }
-    }
-return count;
-}
+// function ismlar(e, dostlar) {
+//     let count = 0;
+//     for(let salom of dostlar) {
+//         if(salom === e) {
+//             count++;
+//         }
+//     }
+// return count;
+// }
 
-console.log(ismlar("e", "elmurod"));
-console.log(ismlar("o", "Shog,zod"));
+// console.log(ismlar("e", "elmurod"));
+// console.log(ismlar("o", "Shog,zod"));
 //asdff
+
+// console.log("Jack Ma maslahatlari");
+// const list = [
+//   "yahshi talaba boling", //0 -20
+//   "togri boshliq tanlang va koproq hato qiling", //20-30
+//   "uzingizga ishlashini boshlang", //30-40
+//   "siz kuchli bolga narsalarni qiling", //40-50
+//   "yoshlarga investitsiya kiriting", //50-60
+//   "endi dam oling, foydasi yoq" //60
+// ];
+// //CALBACK function
+// function maslahatBering(a, callback) {
+//   if (typeof a !== "number") callback("insert a number");
+//   else if (a <= 20) callback(null, list[0]);
+//   else if (a > 20 && a <= 30) callback(null, list[1]);
+//   else if (a > 30 && a <= 40) callback(null, list[2]);
+//   else if (a > 40 && a <= 50) callback(null, list[3]);
+//   else if (a > 50 && a <= 60) callback(null, list[4]);
+//   else {
+//     setTimeout(function () {
+//       callback(null, list[5]);
+//     }, 7000);
+//   }
+// }
+// console.log("bu yerdan otdi");
+// maslahatBering(65, (err, data) => {
+//   if (err) console.log("ERROR", err);
+//   else {
+//     console.log("javob", data);
+//   }
+// });
+// console.log("bu yerdan otdi");
+// function tekshir(value) {
+//     if (typeof value === "string") {
+//       console.log("Bu son!");
+//     } else {
+//       console.log("Bu son emas!");
+//     }
+//   }
+
+//   tekshir("");  // "Bu son!"
+//   tekshir("salom"); // "Bu son emas!"
+//   tekshir("");
