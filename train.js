@@ -45,8 +45,13 @@
 //       }, 1000);
 //     });
 // }
+<<<<<<< HEAD
 // }
 // CALL VAI THEN/CATCH
+=======
+// }   
+  // CALL VAI THEN/CATCH
+>>>>>>> author
 // console.log("passed here 0");
 // maslahatBering(25)
 //   .then((data) => {maslahatBering(31)
@@ -91,6 +96,7 @@
 // }
 // run();
 
+<<<<<<< HEAD
 // function ismlar(e, dostlar) {
 //     let count = 0;
 //     for(let salom of dostlar) {
@@ -147,3 +153,18 @@
 //   tekshir("");  // "Bu son!"
 //   tekshir("salom"); // "Bu son emas!"
 //   tekshir("");
+=======
+function ismlar(e, dostlar) {
+    let count = 0;
+    for(let salom of dostlar) {
+        if(salom === e) {
+            count++;
+        }
+    }
+return count;
+}
+
+console.log(ismlar("e", "elmurod"));
+console.log(ismlar("o", "Shog,zod"));
+//asdff
+>>>>>>> author
