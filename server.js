@@ -15,13 +15,7 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 //4: routing code
-<<<<<<< HEAD
-app.post("/create-item", (req, res) => {
-  //TODO; code with db here    
-});
-=======
-app.post("/create-item", (req, res) => {});
->>>>>>> author
+
 
 app.get("/", function (req, res) {
   res.render("reja");
@@ -33,8 +27,7 @@ server.listen(PORT, function () {
   console.log(
     `The server is runing successfully on port: ${PORT}, http://localhost:${PORT}`
   );
-});
-<<<<<<< HEAD
-=======
+});  
+
   
->>>>>>> author
+
