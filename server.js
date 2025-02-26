@@ -1,33 +1,30 @@
-console.log("web serverni boshlash");
-const express = require("express");
-
-const app = express();
 const http = require("http");
 
-//1: kIRIS Code
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+const mongodb = require("mongodb");
 
-//2 session code
-//3: views code
-app.set("views", "views");
-app.set("view engine", "ejs");
+let db;
+const connectionString =
+  "mongodb+srv://Devit:5Go7gu3RzcrFqrS5@cluster0.0f1pv.mongodb.net/";
 
-//4: routing code
-
-
-app.get("/", function (req, res) {
-  res.render("reja");
-});
-
-const server = http.createServer(app);
-let PORT = 3000;
-server.listen(PORT, function () {
-  console.log(
-    `The server is runing successfully on port: ${PORT}, http://localhost:${PORT}`
-  );
-});  
-
-  
-
+mongodb.connect(
+  connectionString,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  },
+  (err, client) => {
+    if (err) console.log("ERROR on connection MongoDb");
+    else {
+      console.log("MongoDB connection succeed");
+      module.exports = client;
+      const app = require("./app");
+      const server = http.createServer(app);
+      let PORT = 3000;
+      server.listen(PORT, function () {
+        console.log(
+          `The server is runing successfully on port: ${PORT}, http://localhost:${PORT}`
+        );
+      });
+    }
+  }
+);
