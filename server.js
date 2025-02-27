@@ -4,7 +4,7 @@ const mongodb = require("mongodb");
 
 let db;
 const connectionString =
-  "mongodb+srv://Devit:5Go7gu3RzcrFqrS5@cluster0.0f1pv.mongodb.net/";
+  "mongodb+srv://Devit:5Go7gu3RzcrFqrS5@cluster0.0f1pv.mongodb.net/Reja";
 
 mongodb.connect(
   connectionString,
@@ -28,4 +28,3 @@ mongodb.connect(
     }
   }
 );
-  
