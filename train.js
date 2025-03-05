@@ -59,9 +59,9 @@ function list(a, b) {
 
   let list1 = a.split("").sort().join("");
   let list2 = b.split("").sort().join("");
-  return list1 === list2
+  return list1 === list2;
   // console.log(list1);
   // console.log(list2);
 }
 
-console.log(list("maktab", "bkmata"))
+console.log(list("maktab", "bkmata"));

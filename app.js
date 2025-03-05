@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //2 session code
 //3: views code
-app.set("views", "views");
+app.set("views", "views"); 
 app.set("view engine", "ejs");
 
 //4: Routing code
@@ -21,6 +21,7 @@ app.post("/create-item", (req, res) => {
   console.log("user entered /create-item");
   console.log(req.body);
   const new_reja = req.body.reja;
+
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
     console.log(data.ops);
     res.json(data.ops[0]);
