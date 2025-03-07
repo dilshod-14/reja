@@ -54,14 +54,23 @@
 //   myShop.hisobat();
 // }, 5000);
 
-function list(a, b) {
-  if (a.length !== b.length) return false;
+// function list(a, b) {
+//   if (a.length !== b.length) return false;
 
-  let list1 = a.split("").sort().join("");
-  let list2 = b.split("").sort().join("");
-  return list1 === list2;
-  // console.log(list1);
-  // console.log(list2);
+//   let list1 = a.split("").sort().join("");
+//   let list2 = b.split("").sort().join("");
+//   return list1 === list2;
+//   // console.log(list1);
+//   // console.log(list2);
+// }
+
+// console.log(list("maktab", "bkmata"));
+
+function getrevers(a) {
+  if (a.lenght === "");
+  let list = a.split("").reverse().join("");
+  return list;
+  // console.log(list)
 }
 
-console.log(list("maktab", "bkmata"));
+console.log(getrevers("hello"));
