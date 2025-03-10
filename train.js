@@ -66,11 +66,23 @@
 
 // console.log(list("maktab", "bkmata"));
 
-function getrevers(a) {
-  if (a.lenght === "");
-  let list = a.split("").reverse().join("");
-  return list;
-  // console.log(list)
-}
+// function getrevers(a) {
+//   if (a.lenght === "");
+//   let list = a.split("").reverse().join("");
+//   return list;
+//   // console.log(list)
+// }
 
-console.log(getrevers("hello"));
+// console.log(getrevers("hello"));
+
+function list (soz) {
+    return soz.split("").some((a, i, arr) => arr.indexOf(a) !== i)
+}
+console.log(list("hello"))
+
+
+
+
+
+
+
